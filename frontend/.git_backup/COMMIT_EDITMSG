@@ -1,0 +1,35 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	new file:   .vercelignore
+#	new file:   app/dashboard/page.tsx
+#	modified:   app/globals.css
+#	modified:   app/page.tsx
+#	new file:   components.json
+#	new file:   components/auth/AuthForm.tsx
+#	new file:   components/dashboard/AgentInterface.tsx
+#	new file:   components/dashboard/DashboardLayout.tsx
+#	new file:   components/dashboard/VoiceInput.tsx
+#	new file:   components/payments/PricingCard.tsx
+#	new file:   components/ui/avatar.tsx
+#	new file:   components/ui/badge.tsx
+#	new file:   components/ui/button.tsx
+#	new file:   components/ui/card.tsx
+#	new file:   components/ui/dialog.tsx
+#	new file:   components/ui/dropdown-menu.tsx
+#	new file:   components/ui/input.tsx
+#	new file:   components/ui/label.tsx
+#	new file:   components/ui/tabs.tsx
+#	new file:   components/ui/textarea.tsx
+#	new file:   hooks/useAuth.ts
+#	new file:   lib/api.ts
+#	new file:   lib/supabase.ts
+#	new file:   lib/utils.ts
+#	new file:   middleware.ts
+#	modified:   package-lock.json
+#	modified:   package.json
+#	new file:   vercel.json
+#
