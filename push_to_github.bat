@@ -12,11 +12,12 @@ echo Setting remote...
 git remote remove origin
 git remote add origin https://github.com/cadmusjl/agent-antigravity.git
 
-echo Pushing to GitHub...
+echo Pushing to GitHub (Force Overwrite)...
 echo.
 echo IMPORTANT: A login window may appear. Please sign in!
 echo.
-git push -u origin main
+:: Using --force to overwrite the existing 'test' file/history on remote
+git push -f origin main
 
 echo.
 echo Done! Please check the output above for any errors.
