@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/agent-saas-platform_frontend_45a2a481._.js",
+        "server/edge/chunks/[root-of-the-server]__e597a543._.js",
+        "server/edge/chunks/turbopack-agent-saas-platform_frontend_edge-wrapper_cfcc88b2.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next\\/static|_next\\/image|favicon.ico).*))(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!api|_next/static|_next/image|favicon.ico).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "cLQY0OIx63LkjSSgXvvRg08VV2wh0tcwn50ZIbbpOXc=",
+        "__NEXT_PREVIEW_MODE_ID": "e48330c3d4bb3c35f213971fb90434b1",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "00e627e99d5d4bfb55fca504a4d3be4c4f1a25f95aecaec0234a31b8f813fe1f",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "89abb733e1f82a681f4775a3aa7c45ec28779d07a29b019f11563179dc230cf6"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
+}

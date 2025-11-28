@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/agent-saas-platform/frontend/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server'\nimport type { NextRequest } from 'next/server'\n\n// This middleware is optional for Supabase auth\n// We handle auth checks client-side in page components\n// But you can add server-side protection here if needed\n\nexport function middleware(request: NextRequest) {\n  // For now, just allow all requests\n  // Auth is handled client-side via useAuth hook\n  return NextResponse.next()\n}\n\n// Only run middleware on specific paths if needed\nexport const config = {\n  matcher: [\n    /*\n     * Match all request paths except for the ones starting with:\n     * - api (API routes)\n     * - _next/static (static files)\n     * - _next/image (image optimization files)\n     * - favicon.ico (favicon file)\n     */\n    '/((?!api|_next/static|_next/image|favicon.ico).*)',\n  ],\n}\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAOO,SAAS,WAAW,OAAoB;IAC7C,mCAAmC;IACnC,+CAA+C;IAC/C,OAAO,yOAAY,CAAC,IAAI;AAC1B;AAGO,MAAM,SAAS;IACpB,SAAS;QACP;;;;;;KAMC,GACD;KACD;AACH"}}]
+}
