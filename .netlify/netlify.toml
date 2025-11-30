@@ -1,14 +1,14 @@
 functionsDirectory = "C:\\Users\\jason\\agent-saas-platform\\netlify\\functions"
-functionsDirectoryOrigin = "config-v1"
-redirectsOrigin = "config"
-headers = []
+functionsDirectoryOrigin = "default"
+headersOrigin = "inline"
+redirectsOrigin = "inline"
 
 [build]
 publish = "C:\\Users\\jason\\agent-saas-platform\\.next"
-publishOrigin = "config"
-commandOrigin = "config"
-command = "npm run build"
+publishOrigin = "ui"
+commandOrigin = "ui"
 base = "C:\\Users\\jason\\agent-saas-platform"
+command = "npm run build"
 functions = "C:\\Users\\jason\\agent-saas-platform\\netlify\\functions"
 
 [build.environment]
@@ -30,18 +30,42 @@ functions = "C:\\Users\\jason\\agent-saas-platform\\netlify\\functions"
 [functions."*"]
 
 [[plugins]]
-origin = "config"
+origin = "default"
 package = "@netlify/plugin-nextjs"
 
 [plugins.inputs]
 
+[[headers]]
+for = "/_next/static/*"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
 [[redirects]]
-from = "/api/*"
-to = "/.netlify/functions/api/:splat"
+from = "/_next/image"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
 status = 200.0
 force = false
 
 [redirects.query]
+url = ":url"
+w = ":width"
+q = ":quality"
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/_ipx/*"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200.0
+force = false
+
+[redirects.query]
+url = ":url"
+w = ":width"
+q = ":quality"
 
 [redirects.conditions]
 
